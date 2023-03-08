@@ -28,7 +28,7 @@ module Fluent
       config_param :client_cert_key, :string, :default => nil
       config_param :client_cert_key_password, :string, :default => nil
       config_param :verify_mode, :integer, default: nil
-      config_param :packet_size, :size, default: 1024
+      config_param :packet_size, :size, default: 2_147_483_647
       config_param :timeout, :time, default: nil
       config_param :timeout_exception, :bool, default: false
 

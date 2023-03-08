@@ -53,7 +53,7 @@
 | tls               | bool (default: false)            |                     | use TLS (tcp only)                                    |
 | ca_file           | string                           |                     | ca_file path (tls mode only)                          |
 | verify_mode       | integer                          |                     | SSL verification mode (tls mode only)                 |
-| packet_size       | integer (default: `1024`)        |                     | size limitation for syslog packet                     |
+| packet_size       | integer (default: `2147483647`)  |                     | size limitation for syslog packet                     |
 | timeout           | integer                          |                     | TCP transfer timeout. if value is 0, wait forever     |
 | timeout_exception | bool (default: `false`)          |                     | if value is true, raise exception by transfer timeout |
 | keep_alive        | bool (default: `false`)          |                     | use TCP keep alive                                    |
